@@ -1,9 +1,9 @@
 const settingKeys = {
     disableMiningDrills: 'simple-seablock-disable-mining-drills',
     disablePumpjacks: 'simple-seablock-disable-pumpjacks',
-    disableCrudeOil: 'simple-seablock-disable-crude-oil',
     disableMiningProductivity: 'simple-seablock-disable-mining-productivity',
-    startingLandfillCount: 'simple-seablock-starting-landfill-count',
+    disableOvergrowthSoil: 'simple-seablock-disable-overgrowth-soil',
+    disableCliffExplosives: 'simple-seablock-disable-cliff-explosives',
     useMenuBackgrounds: 'simple-seablock-menu-backgrounds',
 }
 
