@@ -1,24 +1,38 @@
 import { settingKeys } from '../setting-keys';
 
-if(settings.startup[settingKeys.disableMiningProductivity].value) {
-    let hiddenTechs = [
-        'mining-productivity-1',
-        'mining-productivity-2',
-        'mining-productivity-3',
-        'mining-productivity-4',
-    ]
+let hiddenTechs: string[] = [];
 
-    for(let techName of hiddenTechs) {
-        const tech = data.raw.technology[techName];
-        tech.hidden = true;
-        tech.enabled = false;
-        if(tech.normal) {
-            tech.normal.hidden = true;
-            tech.normal.enabled = false;
-        }
-        if(tech.expensive) {
-            tech.expensive.hidden = true;
-            tech.expensive.enabled = false;
-        }
-    }
+if(settings.startup[settingKeys.disableMiningProductivity].value) {
+    table.insert(hiddenTechs, 'mining-productivity-1');
+    table.insert(hiddenTechs, 'mining-productivity-2');
+    table.insert(hiddenTechs, 'mining-productivity-3');
+}
+
+if(settings.startup[settingKeys.disableMiningDrills].value) {
+    table.insert(hiddenTechs, 'electric-mining-drill');
+    table.insert(hiddenTechs, 'big-mining-drill');
+}
+
+if(settings.startup[settingKeys.disablePumpjacks].value) {
+    table.insert(hiddenTechs, 'oil-gathering');
+}
+
+if(settings.startup[settingKeys.disableOvergrowthSoil].value) {
+    table.insert(hiddenTechs, 'overgrowth-soil');
+}
+
+if(settings.startup[settingKeys.disableCliffExplosives].value) {
+    table.insert(hiddenTechs, 'cliff-explosives');
+}
+
+table.insert(hiddenTechs, 'yumako');
+table.insert(hiddenTechs, 'jellynut');
+table.insert(hiddenTechs, 'heating-tower');
+table.insert(hiddenTechs, 'foundation');
+table.insert(hiddenTechs, 'tree-seeding');
+
+for(let techName of hiddenTechs) {
+    const tech = data.raw.technology[techName];
+    tech.hidden = true;
+    tech.enabled = false;
 }

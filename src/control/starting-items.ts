@@ -1,28 +1,46 @@
-import { settingKeys } from '../setting-keys';
-
 script.on_event(defines.events.on_player_created, e => {
-    let player = game.players[e.player_index];
+    let player = game.players.get(e.player_index);
 
     if(player.controller_type === defines.controllers.character)
     {
-        const items = [
-            { name: 'landfill', count: settings.startup[settingKeys.startingLandfillCount].value as number },
-            { name: 'bob-greenhouse', count: 1 },
-            { name: 'offshore-pump', count: 1 },
-            { name: 'boiler', count: 1 },
-            { name: 'steam-engine', count: 1 },
-            { name: 'stone-furnace', count: 1 },
-            { name: 'lab', count: 1 },
-            { name: 'seablock-electrolyzer', count: 1 },
-            { name: 'small-electric-pole', count: 20 },
-            { name: 'pipe', count: 20 },
-            { name: 'wood', count: 50 },
-        ];
-
         player.get_inventory(defines.inventory.character_main).clear();
+    }
+})
 
-        for(let item of items) {
-            player.insert(item);
+script.on_event(defines.events.on_chunk_generated, e => {
+    const position = e.position as { x: number, y: number };
+
+    if(position.x === 0 && position.y === 0)
+    {
+        if(e.surface.name === 'nauvis') {
+            e.surface.create_entity({
+                name: 'nauvis-seablock-chest',
+                position: [1, 1],
+            });
+        }
+        if(e.surface.name === 'vulcanus') {
+            e.surface.create_entity({
+                name: 'vulcanus-seablock-chest',
+                position: [1, 1],
+            });
+        }
+        if(e.surface.name === 'fulgora') {
+            e.surface.create_entity({
+                name: 'fulgora-seablock-chest',
+                position: [1, 1],
+            });
+        }
+        if(e.surface.name === 'gleba') {
+            e.surface.create_entity({
+                name: 'gleba-seablock-chest',
+                position: [1, 1],
+            });
+        }
+        if(e.surface.name === 'aquilo') {
+            e.surface.create_entity({
+                name: 'aquilo-seablock-chest',
+                position: [1, 1],
+            });
         }
     }
 })

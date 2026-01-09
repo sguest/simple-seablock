@@ -1,12 +1,6 @@
 function enableRecipe(name: string) {
     const recipe = data.raw.recipe[name];
-    if(recipe.normal) {
-        recipe.normal.enabled = true;
-    }
-    if(recipe.expensive) {
-        recipe.expensive.enabled = true;
-    }
+    recipe.enabled = true;
 }
 
-enableRecipe('bob-seedling');
-enableRecipe('bob-basic-greenhouse-cycle');
+enableRecipe('wood-processing');

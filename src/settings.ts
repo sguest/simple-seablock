@@ -9,24 +9,22 @@ data.extend([
         order: '1'
     },
     {
-        type: 'int-setting',
-        name: settingKeys.startingLandfillCount,
+        type: 'bool-setting', 
+        name: settingKeys.disableMiningDrills,
         setting_type: 'startup',
-        default_value: 1000,
-        minimum_value: 0,
-        maximum_value: 7000,
+        default_value: true,
         order: '2'
     },
     {
-        type: 'bool-setting', 
-        name: settingKeys.disableMiningDrills,
+        type: 'bool-setting',
+        name: settingKeys.disablePumpjacks,
         setting_type: 'startup',
         default_value: true,
         order: '3'
     },
     {
         type: 'bool-setting',
-        name: settingKeys.disablePumpjacks,
+        name: settingKeys.disableOvergrowthSoil,
         setting_type: 'startup',
         default_value: true,
         order: '4'
@@ -40,9 +38,9 @@ data.extend([
     },
     {
         type: 'bool-setting',
-        name: settingKeys.disableCrudeOil,
+        name: settingKeys.disableCliffExplosives,
         setting_type: 'startup',
         default_value: true,
-        order: '6'
+        order: '6',
     },
-])
+]);
