@@ -4,7 +4,7 @@
 
 Start on a 1-tile island. Generate resources instead of mining them. Expand with landfill.
 
-Now supports all vanilla planets with seablock/lavablock/etc setups. If playing with other planets, they will use regular generation. You'll also want to go into the mod options and re-enable things like drills and pumpjacks.
+Now supports all vanilla planets with seablock/lavablock/etc setups. If playing with modded planets, they will use regular generation. You'll also want to go into the mod options and re-enable things like drills and pumpjacks.
 
 Treat other planets like Aquilo early on - you'll need to bring lots of stuff with you to progress, and make sure you have your planetary logistics set up before you go or you may become stranded.
 
@@ -12,7 +12,7 @@ Heavily inspired by the original [Sea Block](https://mods.factorio.com/mod/SeaBl
 
 Changes from Vanilla tech tree
 
-- Chemical plant pulls sediment from water, refine sediment into store and ore
+- Chemical plant pulls sediment from water, refine sediment into stone and ore
 - Use agricultural towers and tree seeds to farm wood from the start of the game
 - Furnace recipe for wood to charcoal
 - Cracking and coal liquefaction available as green-tier research
