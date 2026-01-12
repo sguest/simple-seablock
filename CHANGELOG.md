@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.0.0...simple-seablock-v1.1.0) (2026-01-12)
+
+
+### Features
+
+* add setting to disable tech multiplier for early tech ([#18](https://github.com/sguest/simple-seablock/issues/18)) ([0d64bb7](https://github.com/sguest/simple-seablock/commit/0d64bb7547699b819d08591a7b1b4134704a9f13))
+
 ## [1.0.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v0.2.0...simple-seablock-v1.0.0) (2026-01-09)
 
 
