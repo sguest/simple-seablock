@@ -59,6 +59,7 @@ if(settings.startup[settingKeys.disableStartingTechMultiplier].value) {
     data.raw.technology['logistic-science-pack'].ignore_tech_cost_multiplier = true;
     data.raw.technology['steel-processing'].ignore_tech_cost_multiplier = true;
     data.raw.technology['landfill'].ignore_tech_cost_multiplier = true;
+    data.raw.technology['automation-2'].ignore_tech_cost_multiplier = true;
 }
 
 removePrerequisite('artificial-soil', 'yumako');
