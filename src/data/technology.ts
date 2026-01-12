@@ -1,3 +1,5 @@
+import { settingKeys } from 'src/setting-keys';
+
 function removePrerequisite(techName: string, prerequisite: string) {
     let technology = data.raw.technology[techName];
     for(const [index, name] of pairs(technology.prerequisites)) {
@@ -50,6 +52,14 @@ agriculture.unit = {
     time: 5,
     ingredients: [['automation-science-pack', 1], ['logistic-science-pack', 1]]
 };
+
+// https://mods.factorio.com/mod/SimpleSeablock/discussion/6963dd6733744f78bf745a23
+if(settings.startup[settingKeys.disableStartingTechMultiplier].value) {
+    agriculture.ignore_tech_cost_multiplier = true;
+    data.raw.technology['logistic-science-pack'].ignore_tech_cost_multiplier = true;
+    data.raw.technology['steel-processing'].ignore_tech_cost_multiplier = true;
+    data.raw.technology['landfill'].ignore_tech_cost_multiplier = true;
+}
 
 removePrerequisite('artificial-soil', 'yumako');
 removePrerequisite('artificial-soil', 'jellynut');

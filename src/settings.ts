@@ -43,4 +43,11 @@ data.extend([
         default_value: true,
         order: '6',
     },
+    {
+        type: 'bool-setting',
+        name: settingKeys.disableStartingTechMultiplier,
+        setting_type: 'startup',
+        default_value: false,
+        order: '7',
+    }
 ]);
