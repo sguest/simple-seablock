@@ -20,9 +20,8 @@ function techAddRecipe(techName: string, recipeName: string) {
 techRemoveRecipe('agriculture', 'nutrients-from-spoilage');
 techAddRecipe('planet-discovery-gleba', 'nutrients-from-spoilage');
 
-if(settings.startup[settingKeys.disablePumpjacks].value) {
-    techRemoveRecipe('oil-processing', 'pumpjack');
-}
+techRemoveRecipe('oil-processing', 'chemical-plant');
+techAddRecipe('automation-2', 'chemical-plant');
 
 if(settings.startup[settingKeys.disableMiningDrills].value) {
     data.raw.technology['uranium-mining'].effects = [];
