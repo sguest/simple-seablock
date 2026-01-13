@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.1.0...simple-seablock-v1.2.0) (2026-01-12)
+
+
+### Features
+
+* move Chemical Plant to Automation 2 ([#20](https://github.com/sguest/simple-seablock/issues/20)) ([b2c4097](https://github.com/sguest/simple-seablock/commit/b2c409701f9683f70d8edffee976a06a1fe78fd2))
+
 ## [1.1.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.0.0...simple-seablock-v1.1.0) (2026-01-12)
 
 
