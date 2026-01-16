@@ -12,3 +12,9 @@ foundationRecycling.results = [
     { type: 'item', name: 'stone', amount: 5 },
     { type: 'item', name: 'steel-plate', amount: 1 },
 ];
+
+for(let [_, char] of pairs(data.raw.character)) {
+    if(char.crafting_categories) {
+        table.insert(char.crafting_categories, 'hand-crafting');
+    }
+}

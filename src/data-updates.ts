@@ -4,3 +4,7 @@ import './data-updates/technology';
 import './data-updates/entity';
 import './data-updates/recipe';
 import './data-updates/autoplace-controls';
+import './data-updates/hidden-items';
+import './data-updates/hidden-technologies';
+import './data-updates/menu-background';
+import './mod-compat/data-updates/index';

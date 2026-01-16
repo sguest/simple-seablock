@@ -10,6 +10,9 @@
     "dependencies": [
         "base",
         "space-age",
+
+        "? any-planet-start",
+
         "! SeaBlock"
     ]
 }

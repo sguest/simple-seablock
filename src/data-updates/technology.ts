@@ -1,21 +1,5 @@
 import { settingKeys } from '../setting-keys';
-
-function techRemoveRecipe(techName: string, recipeName: string) {
-    const technology = data.raw.technology[techName];
-
-    for(const [index, effect] of pairs(technology.effects)) {
-        const effectModifier = effect as prototype.Modifier;
-        if(effectModifier.type === 'unlock-recipe' && effectModifier.recipe === recipeName) {
-            table.remove(technology.effects, index as number);
-        }
-    }
-}
-
-function techAddRecipe(techName: string, recipeName: string) {
-    const technology = data.raw.technology[techName];
-
-    table.insert(technology.effects, { type: 'unlock-recipe', recipe: recipeName })
-}
+import { techAddRecipe, techRemoveRecipe } from 'src/utils/technology';
 
 techRemoveRecipe('agriculture', 'nutrients-from-spoilage');
 techAddRecipe('planet-discovery-gleba', 'nutrients-from-spoilage');
