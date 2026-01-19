@@ -98,8 +98,8 @@ glebaData.map_gen_settings.autoplace_settings = {
     entity: {},
 }
 data.raw.tile['highland-yellow-rock'].autoplace.probability_expression = noiseExpressionString;
-data.raw.tile['wetland-yumako'].autoplace.probability_expression = 'if(x_from_start < 0, 1000, -1000)'
-data.raw.tile['wetland-jellynut'].autoplace.probability_expression = 'if(x_from_start > 0, 1000, -1000)'
+data.raw.tile['wetland-yumako'].autoplace.probability_expression = 'if(x_from_start * y_from_start < 0, 1000, -1000)'
+data.raw.tile['wetland-jellynut'].autoplace.probability_expression = 'if(x_from_start * y_from_start > 0, 1000, -1000)'
 
 const aquiloData = data.raw.planet.aquilo;
 aquiloData.map_gen_settings.property_expression_names.elevation = 'seablock-water-world'
