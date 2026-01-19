@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.2.0...simple-seablock-v1.3.0) (2026-01-19)
+
+
+### Features
+
+* use quarters instead of halves terrain gen for Gleba ([#22](https://github.com/sguest/simple-seablock/issues/22)) ([a0aafce](https://github.com/sguest/simple-seablock/commit/a0aafce150afffc1d86c97775b4a3e8d8a25f276))
+
 ## [1.2.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.1.0...simple-seablock-v1.2.0) (2026-01-12)
 
 
