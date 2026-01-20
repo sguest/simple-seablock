@@ -23,8 +23,7 @@ Heavily inspired by the original [Sea Block](https://mods.factorio.com/mod/SeaBl
 
 Due to having minimal techtree changes, this will automatically be compatible with many other mods that don't change map generation or add new planets. Some specific notes include:
 
-- Compatible with [Any Planet Start](https://mods.factorio.com/mod/any-planet-start) starting on Vulcanus, Fulgora, or Gleba
-  - Currently considered in beta, feedback is encouraged
+- Compatible with [Any Planet Start](https://mods.factorio.com/mod/any-planet-start) starting on Vulcanus, Fulgora, or Gleba - currently considered in beta, feedback is encouraged
   - Note the starting island on Nauvis and Vulcanus is *slightly* larger for technical reasons when Any Planet Start is installed
 - When playing with higher values for technology price multiplier, consider enabling the mod setting "Disable technology price multiplier for starting technologies" (which is disabled by default)
 
