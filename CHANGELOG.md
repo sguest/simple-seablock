@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.3.0...simple-seablock-v1.4.0) (2026-01-20)
+
+
+### Features
+
+* Any Planet Start compatibility ([#24](https://github.com/sguest/simple-seablock/issues/24)) ([b4d821c](https://github.com/sguest/simple-seablock/commit/b4d821cd1830de155f0ddc261387e38759478a74))
+
 ## [1.3.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.2.0...simple-seablock-v1.3.0) (2026-01-19)
 
 
