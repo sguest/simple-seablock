@@ -1,29 +1,6 @@
 import { settingKeys } from 'src/setting-keys';
+import { addPrerequisite, removePrerequisite, removeSciencePack } from 'src/utils/technology';
 
-function removePrerequisite(techName: string, prerequisite: string) {
-    let technology = data.raw.technology[techName];
-    for(const [index, name] of pairs(technology.prerequisites)) {
-        if(name === prerequisite) {
-            table.remove(technology.prerequisites, index as number);
-        }
-    }
-}
-
-function addPrerequisite(techName: string, prerequisite: string) {
-    table.insert(data.raw.technology[techName].prerequisites, prerequisite);
-}
-
-type sciencePackIngredient = [string, number];
-
-function removeSciencePack(techName: string, packName: string) {
-    let technology = data.raw.technology[techName];
-
-    for(const [index, ingredient] of pairs(technology.unit.ingredients)) {
-        if((ingredient as sciencePackIngredient)[0] === packName)  {
-            table.remove(technology.unit.ingredients, index as number)
-        }
-    }
-}
 
 removePrerequisite('coal-liquefaction', 'metallurgic-science-pack');
 addPrerequisite('coal-liquefaction', 'oil-processing');

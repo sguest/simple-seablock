@@ -1,5 +1,3 @@
-import { settingKeys } from 'src/setting-keys';
-
 const nauvis_rock = table.deepcopy(data.raw['simple-entity']['big-rock']);
 nauvis_rock.name = 'nauvis-seablock-chest';
 nauvis_rock.localised_name = ['entity-name.big-rock'];
