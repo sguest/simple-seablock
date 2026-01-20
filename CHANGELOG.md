@@ -6,6 +6,8 @@
 ### Features
 
 * make Mining Productivity boost mining-replacement recipes ([#26](https://github.com/sguest/simple-seablock/issues/26)) ([a3f031b](https://github.com/sguest/simple-seablock/commit/a3f031b672ef32f0d3f166d50acad2c643cdf0b0))
+* remove disable starting tech multiplier setting - instead always applies ([#26](https://github.com/sguest/simple-seablock/issues/26)) ([a3f031b](https://github.com/sguest/simple-seablock/commit/a3f031b672ef32f0d3f166d50acad2c643cdf0b0))
+
 
 ## [1.4.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.3.0...simple-seablock-v1.4.0) (2026-01-20)
 
