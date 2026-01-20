@@ -31,23 +31,9 @@ data.extend([
     },
     {
         type: 'bool-setting',
-        name: settingKeys.disableMiningProductivity,
-        setting_type: 'startup',
-        default_value: true,
-        order: '5',
-    },
-    {
-        type: 'bool-setting',
         name: settingKeys.disableCliffExplosives,
         setting_type: 'startup',
         default_value: true,
         order: '6',
-    },
-    {
-        type: 'bool-setting',
-        name: settingKeys.disableStartingTechMultiplier,
-        setting_type: 'startup',
-        default_value: false,
-        order: '7',
     }
 ]);

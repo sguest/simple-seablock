@@ -301,7 +301,7 @@ data.extend([
     ],
     results: [
         { type: 'item', name: 'tungsten-ore', amount: 10 },
-        { type: 'item', name: 'stone', amount: 15 },
+        { type: 'item', name: 'stone', amount: 15, ignored_by_productivity: 15 },
     ],
     surface_conditions: [{
         property: 'pressure',
