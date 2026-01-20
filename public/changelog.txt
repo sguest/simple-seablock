@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.0
+Date: 2026-01-20
+  Features:
+    - make Mining Productivity boost mining-replacement recipes
+    - remove disable starting tech multiplier setting - instead always applies
+
+---------------------------------------------------------------------------------------------------
 Version: 1.4.0
 Date: 2026-01-20
   Features:
