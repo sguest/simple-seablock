@@ -75,10 +75,8 @@ if(mods['any-planet-start']) {
             fluid: 'sulfuric-acid'
         };
 
-        if(settings.startup[settingKeys.disableStartingTechMultiplier].value) {
-            data.raw.technology['engine'].ignore_tech_cost_multiplier = true;
-            data.raw.technology['fluid-handling'].ignore_tech_cost_multiplier = true;
-        }
+        data.raw.technology['engine'].ignore_tech_cost_multiplier = true;
+        data.raw.technology['fluid-handling'].ignore_tech_cost_multiplier = true;
 
         data.extend([
             {

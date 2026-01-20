@@ -30,14 +30,11 @@ agriculture.unit = {
     ingredients: [['automation-science-pack', 1], ['logistic-science-pack', 1]]
 };
 
-// https://mods.factorio.com/mod/SimpleSeablock/discussion/6963dd6733744f78bf745a23
-if(settings.startup[settingKeys.disableStartingTechMultiplier].value) {
-    agriculture.ignore_tech_cost_multiplier = true;
-    data.raw.technology['logistic-science-pack'].ignore_tech_cost_multiplier = true;
-    data.raw.technology['steel-processing'].ignore_tech_cost_multiplier = true;
-    data.raw.technology['landfill'].ignore_tech_cost_multiplier = true;
-    data.raw.technology['automation-2'].ignore_tech_cost_multiplier = true;
-}
+agriculture.ignore_tech_cost_multiplier = true;
+data.raw.technology['logistic-science-pack'].ignore_tech_cost_multiplier = true;
+data.raw.technology['steel-processing'].ignore_tech_cost_multiplier = true;
+data.raw.technology['landfill'].ignore_tech_cost_multiplier = true;
+data.raw.technology['automation-2'].ignore_tech_cost_multiplier = true;
 
 removePrerequisite('artificial-soil', 'yumako');
 removePrerequisite('artificial-soil', 'jellynut');
