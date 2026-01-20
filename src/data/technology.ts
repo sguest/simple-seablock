@@ -95,4 +95,35 @@ data.raw.technology['biter-egg-handling'].research_trigger = {
     item: 'biter-egg',
 };
 
+const miningProductivityRecipes = [
+    'wood-to-coal',
+    'iron-from-sediment',
+    'copper-from-sediment',
+    'stone-from-sediment',
+    'uranium-from-sediment',
+    'scrap-from-heavy-oil',
+    'calcite-crystallization',
+    'tungsten-from-lava',
+    'sulfuric-acid-from-carbon',
+    'coal-synthesis-from-lava',
+    'oil-from-ammonia',
+    'lithium-brine-from-ammonia',
+    'fluorine-from-ammonia',
+]
+for(let i = 1; i <= 3; i++)
+{
+    const miningProductivity = data.raw.technology[`mining-productivity-${i}`];
+    if(settings.startup[settingKeys.disablePumpjacks].value && settings.startup[settingKeys.disableMiningDrills].value) {
+        miningProductivity.effects = [];
+    }
+
+    for(let recipe of miningProductivityRecipes) {
+        miningProductivity.effects.push({
+            type: 'change-recipe-productivity',
+            recipe,
+            change: 0.1,
+        })
+    }
+}
+
 export {};

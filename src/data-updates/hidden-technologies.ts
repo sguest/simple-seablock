@@ -2,12 +2,6 @@ import { settingKeys } from '../setting-keys';
 
 let hiddenTechs: string[] = [];
 
-if(settings.startup[settingKeys.disableMiningProductivity].value) {
-    table.insert(hiddenTechs, 'mining-productivity-1');
-    table.insert(hiddenTechs, 'mining-productivity-2');
-    table.insert(hiddenTechs, 'mining-productivity-3');
-}
-
 if(settings.startup[settingKeys.disableMiningDrills].value) {
     table.insert(hiddenTechs, 'electric-mining-drill');
     table.insert(hiddenTechs, 'big-mining-drill');
