@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.5.0...simple-seablock-v1.5.1) (2026-01-22)
+
+
+### Bugfixes
+
+* multiplayer crash when playing with Any Planet Start ([#28](https://github.com/sguest/simple-seablock/issues/28)) ([b337ea8](https://github.com/sguest/simple-seablock/commit/b337ea84fe4362408a7a8b7429b8483654026ba4))
+
 ## [1.5.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.4.0...simple-seablock-v1.5.0) (2026-01-20)
 
 
