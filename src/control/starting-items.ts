@@ -33,7 +33,9 @@ script.on_event(defines.events.on_player_created, e => {
             entity.destroy({ raise_destroy: false });
         }
 
-        player.exit_cutscene();
+        if(player.controller_type === defines.controllers.cutscene) {
+            player.exit_cutscene();
+        }
     }
 });
 
