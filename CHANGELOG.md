@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.2](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.5.1...simple-seablock-v1.5.2) (2026-01-25)
+
+
+### Bugfixes
+
+* put Oil Procesing back on Planet Discovery Nauvis with Any Planet Start ([#30](https://github.com/sguest/simple-seablock/issues/30)) ([1c383de](https://github.com/sguest/simple-seablock/commit/1c383de1b50283d8c2f437db40ce26a655bf9658))
+
 ## [1.5.1](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.5.0...simple-seablock-v1.5.1) (2026-01-22)
 
 
