@@ -19,8 +19,6 @@ if(mods['any-planet-start']) {
     }
 
     if(startingPlanet !== 'nauvis') {
-        techRemoveRecipe('planet-discovery-nauvis', 'basic-oil-processing');
-        techRemoveRecipe('planet-discovery-nauvis', 'advanced-oil-processing');
         techAddRecipe('planet-discovery-nauvis', 'crude-coal-liquefaction');
         techRemoveRecipe('coal-liquefaction', 'crude-coal-liquefaction');
 
