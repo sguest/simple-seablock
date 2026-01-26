@@ -6,6 +6,8 @@
         { "type": "feature", "section": "Features" },
         { "type": "fix", "section": "Bugfixes" },
         { "type": "perf", "section": "Optimizations" },
+        { "type": "compat", "section": "Compatibility" },
+        { "type": "compatibility", "section": "Compatibility "},
         { "type": "chore", "section": "Miscellaneous Chores", "hidden": true }
     ],
     "extra-files": [
