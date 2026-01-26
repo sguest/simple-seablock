@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.3](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.5.2...simple-seablock-v1.5.3) (2026-01-26)
+
+
+### Compatibility
+
+* use Any Planet Start interface to disable crash site ([#32](https://github.com/sguest/simple-seablock/issues/32)) ([feb2b65](https://github.com/sguest/simple-seablock/commit/feb2b658c9cba07f323cb7e3711f8cb20aacddfc))
+
 ## [1.5.2](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.5.1...simple-seablock-v1.5.2) (2026-01-25)
 
 
