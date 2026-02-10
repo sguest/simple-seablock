@@ -28,5 +28,4 @@ table.insert(hiddenTechs, 'tree-seeding');
 for(let techName of hiddenTechs) {
     const tech = data.raw.technology[techName];
     tech.hidden = true;
-    tech.enabled = false;
 }
