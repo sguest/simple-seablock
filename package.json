@@ -1,6 +1,6 @@
 {
   "name": "simple-seablock",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "Vanilla-based Factorio Seablock",
   "main": "index.js",
   "scripts": {
