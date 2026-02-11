@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.4](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.5.3...simple-seablock-v1.5.4) (2026-02-11)
+
+
+### Bugfixes
+
+* handle cases where a removed tech is a dependency of another one ([#36](https://github.com/sguest/simple-seablock/issues/36)) ([6a95bf3](https://github.com/sguest/simple-seablock/commit/6a95bf3c388bf27b0f20b52dce6a4a0a29318a3e))
+* leave hidden techs enabled so they can be re-enabled later ([#34](https://github.com/sguest/simple-seablock/issues/34)) ([4efb092](https://github.com/sguest/simple-seablock/commit/4efb092c40b9ed8935040f5a4792b272d6f0efd7))
+
 ## [1.5.3](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.5.2...simple-seablock-v1.5.3) (2026-01-26)
 
 
