@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.4
+Date: 2026-02-11
+  Bugfixes:
+    - handle cases where a removed tech is a dependency of another one
+    - leave hidden techs enabled so they can be re-enabled later
+
+---------------------------------------------------------------------------------------------------
 Version: 1.5.3
 Date: 2026-01-26
   Compatibility:
