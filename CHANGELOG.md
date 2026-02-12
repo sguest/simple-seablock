@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.5](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.5.4...simple-seablock-v1.5.5) (2026-02-12)
+
+
+### Bugfixes
+
+* remove starting item containers from autoplace pool ([#37](https://github.com/sguest/simple-seablock/issues/37)) ([d9d3285](https://github.com/sguest/simple-seablock/commit/d9d328542b87ae3c7aeaa287fbb32c3282eafdf1))
+
 ## [1.5.4](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.5.3...simple-seablock-v1.5.4) (2026-02-11)
 
 
