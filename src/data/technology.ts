@@ -126,4 +126,8 @@ for(let i = 1; i <= 3; i++)
     }
 }
 
+for(let recipe of miningProductivityRecipes) {
+    data.raw.recipe[recipe].maximum_productivity = 9999;
+}
+
 export {};
