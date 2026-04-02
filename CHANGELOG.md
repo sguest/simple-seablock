@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.5.5...simple-seablock-v1.6.0) (2026-04-02)
+
+
+### Features
+
+* allow mining-replacement recipes to exceed 300% productivity ([#39](https://github.com/sguest/simple-seablock/issues/39)) ([bf2cd18](https://github.com/sguest/simple-seablock/commit/bf2cd186bff6e7b14496e524f6282bd470d580cf))
+
 ## [1.5.5](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.5.4...simple-seablock-v1.5.5) (2026-02-12)
 
 
