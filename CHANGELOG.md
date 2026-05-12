@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.1](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.6.0...simple-seablock-v1.6.1) (2026-05-12)
+
+
+### Compatibility
+
+* add compatibility with Space is Fake ([#43](https://github.com/sguest/simple-seablock/issues/43)) ([f4ac4fc](https://github.com/sguest/simple-seablock/commit/f4ac4fc17abe2b2251f6ce05a44644ae9bd2b3f3))
+* make Space Age Without Space as incompatible ([#41](https://github.com/sguest/simple-seablock/issues/41)) ([32a5ccc](https://github.com/sguest/simple-seablock/commit/32a5cccc2a6bbefdc934019b1aa3e43bfdd4f7ec))
+
 ## [1.6.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.5.5...simple-seablock-v1.6.0) (2026-04-02)
 
 

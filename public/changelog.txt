@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.1
+Date: 2026-05-12
+  Compatibility:
+    - add compatibility with Space is Fake
+    - make Space Age Without Space as incompatible
+
+---------------------------------------------------------------------------------------------------
 Version: 1.6.0
 Date: 2026-04-02
   Features:
