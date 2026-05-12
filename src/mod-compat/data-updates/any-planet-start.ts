@@ -1,4 +1,3 @@
-import { settingKeys } from 'src/setting-keys';
 import { addPrerequisite, removePrerequisite, techAddRecipe, techFixRecipeExtras, techRemoveRecipe } from 'src/utils/technology';
 
 function fixNauvisRecipe(recipe: string) {
