@@ -1,4 +1,4 @@
-import { settingKeys } from 'src/setting-keys';
+const hiddenTechs: string[] = [];
 
 export function techRemoveRecipe(techName: string, recipeName: string) {
     const technology = data.raw.technology[techName];
@@ -60,31 +60,22 @@ export function removeSciencePack(techName: string, packName: string) {
     }
 }
 
+export function hideTechnology(techName: string) {
+    data.raw.technology[techName].hidden = true;
+    hiddenTechs.push(techName);
+}
+
 export function listHiddenTechs() {
-    let hiddenTechs: string[] = [];
-
-    if(settings.startup[settingKeys.disableMiningDrills].value) {
-        table.insert(hiddenTechs, 'electric-mining-drill');
-        table.insert(hiddenTechs, 'big-mining-drill');
-    }
-
-    if(settings.startup[settingKeys.disablePumpjacks].value) {
-        table.insert(hiddenTechs, 'oil-gathering');
-    }
-
-    if(settings.startup[settingKeys.disableOvergrowthSoil].value) {
-        table.insert(hiddenTechs, 'overgrowth-soil');
-    }
-
-    if(settings.startup[settingKeys.disableCliffExplosives].value) {
-        table.insert(hiddenTechs, 'cliff-explosives');
-    }
-
-    table.insert(hiddenTechs, 'yumako');
-    table.insert(hiddenTechs, 'jellynut');
-    table.insert(hiddenTechs, 'heating-tower');
-    table.insert(hiddenTechs, 'foundation');
-    table.insert(hiddenTechs, 'tree-seeding');
-
     return hiddenTechs;
+}
+
+export function addMiningProductivity(recipe: string) {
+    for(let i = 1; i <= 3; i++)
+    {
+        data.raw.technology[`mining-productivity-${i}`].effects.push({
+            type: 'change-recipe-productivity',
+            recipe,
+            change: 0.1,
+        })
+    }
 }

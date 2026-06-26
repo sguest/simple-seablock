@@ -4,8 +4,8 @@ import { listHiddenTechs, removePrerequisite } from 'src/utils/technology';
 const hiddenTechs = listHiddenTechs();
 
 for(const [i, technology] of pairs(data.raw.technology)) {
-    for(let tech of hiddenTechs) {
-        if(technology.prerequisites) {
+    if(technology.prerequisites) {
+        for(let tech of hiddenTechs) {
             for(let prerequisite of technology.prerequisites) {
                 if(prerequisite === tech) {
                     removePrerequisite(technology.name, prerequisite);
