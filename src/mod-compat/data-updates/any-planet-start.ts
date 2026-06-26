@@ -1,3 +1,4 @@
+import { addStartingItems } from 'src/utils/starting-items';
 import { addPrerequisite, removePrerequisite, techAddRecipe, techFixRecipeExtras, techRemoveRecipe } from 'src/utils/technology';
 
 function fixNauvisRecipe(recipe: string) {
@@ -48,11 +49,9 @@ if(mods['any-planet-start']) {
         // I don't know why the teleport fails when dropping from orbit works just fine
         data.raw.tile['volcanic-soil-dark'].autoplace.probability_expression = 'if(x_from_start^2 + y_from_start^2 < 2, 1, -1000)';
 
-        const startingChest = data.raw['simple-entity']['vulcanus-seablock-chest'];
-
-        table.insert(startingChest.minable.results, { type: 'item', name: 'solar-panel', amount_min: 10, amount_max: 10 });
-        table.insert(startingChest.minable.results, { type: 'item', name: 'offshore-pump', amount_min: 5, amount_max: 5 });
-        table.insert(startingChest.minable.results, { type: 'item', name: 'medium-electric-pole', amount_min: 20, amount_max: 20 });
+        addStartingItems('vulcanus', 'solar-panel', 10);
+        addStartingItems('vulcanus', 'offshore-pump', 5);
+        addStartingItems('vulcanus', 'medium-electric-pole', 20);
         makeStartingRecipe('molten-iron-from-lava', 'foundry');
         makeStartingRecipe('molten-copper-from-lava', 'foundry');
         makeStartingRecipe('casting-iron', 'foundry');
@@ -122,12 +121,10 @@ if(mods['any-planet-start']) {
     }
 
     if(startingPlanet === 'fulgora') {
-        const startingChest = data.raw['simple-entity']['fulgora-seablock-chest'];
-
-        table.insert(startingChest.minable.results, { type: 'item', name: 'lightning-rod', amount_min: 10, amount_max: 10 });
-        table.insert(startingChest.minable.results, { type: 'item', name: 'accumulator', amount_min: 10, amount_max: 10 });
-        table.insert(startingChest.minable.results, { type: 'item', name: 'offshore-pump', amount_min: 5, amount_max: 5 });
-        table.insert(startingChest.minable.results, { type: 'item', name: 'medium-electric-pole', amount_min: 20, amount_max: 20 });
+        addStartingItems('fulgora', 'lightning-rod', 10);
+        addStartingItems('fulgora', 'accumulator', 10);
+        addStartingItems('fulgora', 'offshore-pump', 5);
+        addStartingItems('fulgora', 'medium-electric-pole', 20);
 
         removePrerequisite('scrap-recycling-productivity-1', 'electic-mining-drill');
         makeStartingRecipe('offshore-pump', 'oil-gathering');
@@ -135,11 +132,9 @@ if(mods['any-planet-start']) {
     }
 
     if(startingPlanet === 'gleba') {
-        const startingChest = data.raw['tree']['gleba-seablock-chest'];
-
-        table.insert(startingChest.minable.results, { type: 'item', name: 'solar-panel', amount_min: 20, amount_max: 20 });
-        table.insert(startingChest.minable.results, { type: 'item', name: 'medium-electric-pole', amount_min: 20, amount_max: 20 });
-        table.insert(startingChest.minable.results, { type: 'item', name: 'stone-furnace', amount_min: 20, amount_max: 20 });
+        addStartingItems('gleba', 'solar-panel', 20);
+        addStartingItems('gleba', 'medium-electric-pole', 20);
+        addStartingItems('gleba', 'stone-furnace', 20);
 
         data.raw.technology['electronics'].research_trigger = {
             type: 'craft-item',

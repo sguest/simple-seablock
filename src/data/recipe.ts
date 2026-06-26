@@ -17,6 +17,7 @@ data.extend([
     allow_productivity: true,
     results: [{ type: 'item', name: 'coal', amount: 10 }],
     auto_recycle: false,
+    maximum_productivity: 9999,
 },
 {
     type: 'recipe',
@@ -72,6 +73,7 @@ data.extend([
         max: 1000,
     }],
     auto_recycle: false,
+    maximum_productivity: 9999,
 },
 {
     type: 'recipe',
@@ -91,6 +93,7 @@ data.extend([
         max: 1000,
     }],
     auto_recycle: false,
+    maximum_productivity: 9999,
 },
 {
     type: 'recipe',
@@ -112,6 +115,7 @@ data.extend([
         max: 2000,
     }],
     auto_recycle: false,
+    maximum_productivity: 9999,
 },
 {
     type: 'recipe',
@@ -133,6 +137,7 @@ data.extend([
         max: 1000,
     }],
     auto_recycle: false,
+    maximum_productivity: 9999,
 },
 {
     type: 'recipe',
@@ -201,6 +206,7 @@ data.extend([
         max: 99,
     }],
     auto_recycle: false,
+    maximum_productivity: 9999,
 },
 {
     type: 'recipe',
@@ -283,6 +289,7 @@ data.extend([
         max: 4000,
     }],
     auto_recycle: false,
+    maximum_productivity: 9999,
 },
 {
     type: 'recipe',
@@ -309,6 +316,7 @@ data.extend([
         max: 4000,
     }],
     auto_recycle: false,
+    maximum_productivity: 9999,
 },
 {
     type: 'recipe',
@@ -333,6 +341,7 @@ data.extend([
         max: 4000,
     }],
     auto_recycle: false,
+    maximum_productivity: 9999,
 },
 {
     type: 'recipe',
@@ -358,6 +367,7 @@ data.extend([
         max: 4000,
     }],
     auto_recycle: false,
+    maximum_productivity: 9999,
 },
 {
     type: 'recipe',
@@ -377,6 +387,7 @@ data.extend([
         { type: 'item', name: 'ice', amount: 3 },
     ],
     auto_recycle: false,
+    maximum_productivity: 9999,
 },
 {
     type: 'recipe',
@@ -395,6 +406,7 @@ data.extend([
         { type: 'fluid', name: 'lithium-brine', amount: 50 },
     ],
     auto_recycle: false,
+    maximum_productivity: 9999,
 },
 {
     type: 'recipe',
@@ -412,6 +424,7 @@ data.extend([
         { type: 'fluid', name: 'fluorine', amount: 50 },
     ],
     auto_recycle: false,
+    maximum_productivity: 9999,
 },
 {
     type: 'recipe',
