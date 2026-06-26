@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.6.1...simple-seablock-v1.7.0) (2026-06-26)
+
+
+### Features
+
+* Krastorio2 Spaced Out compatibility ([#44](https://github.com/sguest/simple-seablock/issues/44)) ([8d202bf](https://github.com/sguest/simple-seablock/commit/8d202bfa40c4b40ee10ab1110a7d96c3614b76ea))
+
 ## [1.6.1](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.6.0...simple-seablock-v1.6.1) (2026-05-12)
 
 
