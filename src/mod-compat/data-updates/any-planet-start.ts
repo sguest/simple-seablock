@@ -30,7 +30,7 @@ if(mods['any-planet-start']) {
         fixNauvisRecipe('stone-from-sediment');
         fixNauvisRecipe('uranium-from-sediment');
         fixNauvisRecipe('driftwood-forage');
-        fixNauvisRecipe('wood-processing');
+        fixNauvisRecipe('tree-seed');
 
         techAddRecipe('planet-discovery-gleba', 'sediment');
         techAddRecipe('planet-discovery-gleba', 'stone-from-sediment');
@@ -78,8 +78,7 @@ if(mods['any-planet-start']) {
             {
                 type: 'recipe',
                 name: 'carbon-forage',
-                always_show_products: true,
-                category: 'hand-crafting',
+                categories: [ 'hand-crafting' ],
                 enabled: true,
                 allow_productivity: false,
                 energy_required: 10,
@@ -97,7 +96,6 @@ if(mods['any-planet-start']) {
             {
                 type: 'recipe',
                 name: 'carbon-spoilage',
-                always_show_products: true,
                 enabled: false,
                 energy_required: 2,
                 ingredients: [
@@ -167,8 +165,7 @@ if(mods['any-planet-start']) {
             {
                 type: 'recipe',
                 name: 'iron-bacteria-forage',
-                always_show_products: true,
-                category: 'hand-crafting',
+                categories: ['hand-crafting'],
                 enabled: true,
                 allow_productivity: false,
                 energy_required: 10,
@@ -186,8 +183,7 @@ if(mods['any-planet-start']) {
             {
                 type: 'recipe',
                 name: 'copper-bacteria-forage',
-                always_show_products: true,
-                category: 'hand-crafting',
+                categories: ['hand-crafting'],
                 enabled: true,
                 allow_productivity: false,
                 energy_required: 10,

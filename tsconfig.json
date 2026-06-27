@@ -2,12 +2,14 @@
     "$schema": "https://raw.githubusercontent.com/TypeScriptToLua/TypeScriptToLua/master/tsconfig-schema.json",
     "extends": "factorio-types/tsconfig.base.json",
     "compilerOptions": {
-        "baseUrl": ".",
+        "paths": {
+            "*": ["./*"]
+        },
         "outDir": "dist/SimpleSeablock",
-        "rootDir": "src",
+        "rootDir": "src"
     },
     "tstl": {
-        "luaLibImport": "none",
+        "luaLibImport": "none"
     },
     "include": [
         "src/**/*.ts"

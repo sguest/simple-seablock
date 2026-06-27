@@ -5,7 +5,7 @@
     "author": "Aronson",
     "contact": "https://github.com/sguest/simple-seablock/issues",
     "homepage": "https://github.com/sguest/simple-seablock",
-    "factorio_version": "2.0",
+    "factorio_version": "2.1",
     "description": "Seablock based primarily around vanilla factorio techtree with minor changes",
     "dependencies": [
         "base",

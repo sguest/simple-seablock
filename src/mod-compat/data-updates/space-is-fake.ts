@@ -14,12 +14,11 @@ if(mods['space-is-fake']) {
         {
             type: 'recipe',
             name: 'lava-from-stone',
-            category: 'metallurgy',
+            categories: ['metallurgy'],
             subgroup: 'vulcanus-processes',
             energy_required: 1,
             enabled: false,
             allow_productivity: true,
-            always_show_products: true,
             ingredients: [
                 { type: 'item', name: 'stone', amount: 10 },
             ],
@@ -32,12 +31,11 @@ if(mods['space-is-fake']) {
         {
             type: 'recipe',
             name: 'ammoniacal-solution-from-water',
-            category: 'chemistry',
+            categories: ['chemistry'],
             subgroup: 'aquilo-processes',
             energy_required: 2,
             enabled: false,
             allow_productivity: true,
-            always_show_products: true,
             ingredients: [
                 { type: 'fluid', name: 'water', amount: 100 },
             ],
