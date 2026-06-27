@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.7.0...simple-seablock-v1.7.1) (2026-06-27)
+
+
+### Compatibility
+
+* Factorio 2.1 support ([#46](https://github.com/sguest/simple-seablock/issues/46)) ([69918eb](https://github.com/sguest/simple-seablock/commit/69918ebe97306e374ec57bda82a666486cd963eb))
+
 ## [1.7.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.6.1...simple-seablock-v1.7.0) (2026-06-26)
 
 
