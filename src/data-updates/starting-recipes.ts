@@ -3,4 +3,4 @@ function enableRecipe(name: string) {
     recipe.enabled = true;
 }
 
-enableRecipe('wood-processing');
+enableRecipe('tree-seed');
