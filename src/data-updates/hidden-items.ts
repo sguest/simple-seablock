@@ -1,15 +1,20 @@
+import { addHiddenEntity } from 'src/utils/entity';
 import { settingKeys } from '../setting-keys';
 
 let hiddenItems: string[] = [];
 
 if(settings.startup[settingKeys.disableMiningDrills].value) {
     table.insert(hiddenItems, 'burner-mining-drill');
+    addHiddenEntity(data.raw['mining-drill']['burner-mining-drill']);
     table.insert(hiddenItems, 'electric-mining-drill');
+    addHiddenEntity(data.raw['mining-drill']['electric-mining-drill']);
     table.insert(hiddenItems, 'big-mining-drill');
+    addHiddenEntity(data.raw['mining-drill']['big-mining-drill']);
 }
 
 if(settings.startup[settingKeys.disablePumpjacks].value) {
     table.insert(hiddenItems, 'pumpjack');
+    addHiddenEntity(data.raw['mining-drill']['pumpjack']);
 }
 
 if(settings.startup[settingKeys.disableOvergrowthSoil].value) {

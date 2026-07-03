@@ -1,8 +1,14 @@
 import { settingKeys } from 'src/setting-keys';
+import { addHiddenEntity } from 'src/utils/entity';
 import { addStartingItems } from 'src/utils/starting-items';
 import { addMiningProductivity, hideTechnology, techAddRecipe, techRemoveRecipe } from 'src/utils/technology';
 
-if(mods['Krastorio2-spaced-out'])
+// Even though k2so is strictly the optional dep, gating this on presence of Krastorio2 instead
+// Krastorio2 is a required dep of k2so, so this should always fire when k2so is installed
+// Doing it this way prevents a crash at startup with Krastorio 2 is installed alongside Simple Seablock but *without* k2so
+// https://mods.factorio.com/mod/SimpleSeablock/discussion/6a412984b877c1aabec0ea07
+// However, this is still not really a supported scenario as Krastorio 2 has broken progression with space age without k2so, as per its mod page
+if(mods['Krastorio2'])
 {
     addStartingItems('nauvis', 'kr-wind-turbine', 5);
 
@@ -12,7 +18,8 @@ if(mods['Krastorio2-spaced-out'])
         data.raw.item['kr-electric-mining-drill-mk2'].hidden = true;
         data.raw.item['kr-quarry-drill'].flags ||= [];
         data.raw.item['kr-quarry-drill'].hidden = true;
-        data.raw['mining-drill']['electric-mining-drill'].next_upgrade = null;
+
+        addHiddenEntity(data.raw['mining-drill']['kr-electric-mining-drill-mk2']);
 
         const fluidChemistry = data.raw.technology['kr-fluids-chemistry'];
         for(const [index, effect] of pairs(fluidChemistry.effects)) {
