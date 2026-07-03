@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.2](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.7.1...simple-seablock-v1.7.2) (2026-07-03)
+
+
+### Compatibility
+
+* better handling of drill upgrades to prevent crash with Krastorio 2 without K2SO ([#48](https://github.com/sguest/simple-seablock/issues/48)) ([04e4fe4](https://github.com/sguest/simple-seablock/commit/04e4fe47d71c72ec948e4e242baec251906867b3))
+
 ## [1.7.1](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.7.0...simple-seablock-v1.7.1) (2026-06-27)
 
 
