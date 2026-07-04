@@ -70,12 +70,17 @@ export function listHiddenTechs() {
 }
 
 export function addMiningProductivity(recipe: string) {
-    for(let i = 1; i <= 3; i++)
+    // Base game this only goes up to 3, but Krastorio2 adds mining-productivity-6 (but not 4 or 5)
+    // Going up to 10 and catching any that exist from mods should hopefully handle things across all cases
+    for(let i = 1; i <= 10; i++)
     {
-        data.raw.technology[`mining-productivity-${i}`].effects.push({
-            type: 'change-recipe-productivity',
-            recipe,
-            change: 0.1,
-        })
+        const miningProductivity = data.raw.technology[`mining-productivity-${i}`];
+        if(miningProductivity) {
+            miningProductivity.effects.push({
+                type: 'change-recipe-productivity',
+                recipe,
+                change: 0.1,
+            })
+        }
     }
 }
