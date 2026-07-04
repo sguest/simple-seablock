@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.4](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.7.3...simple-seablock-v1.7.4) (2026-07-04)
+
+
+### Compatibility
+
+* handle mods like Krastorio that add extra mining productivity researches ([#53](https://github.com/sguest/simple-seablock/issues/53)) ([f440c86](https://github.com/sguest/simple-seablock/commit/f440c8688bfa379df08d0f80dc98abb83892fc6e))
+
 ## [1.7.3](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.7.2...simple-seablock-v1.7.3) (2026-07-04)
 
 
