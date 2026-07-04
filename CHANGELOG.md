@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.3](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.7.2...simple-seablock-v1.7.3) (2026-07-04)
+
+
+### Bugfixes
+
+* biomass and military science for k2so ([#50](https://github.com/sguest/simple-seablock/issues/50)) ([c166381](https://github.com/sguest/simple-seablock/commit/c1663814b09235142dd0740f4042a5a77c312f92))
+* mineral water gathering tech for k2so ([#52](https://github.com/sguest/simple-seablock/issues/52)) ([757775a](https://github.com/sguest/simple-seablock/commit/757775aa85cff6d690e88104e4e252af0bcb91c6))
+
 ## [1.7.2](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.7.1...simple-seablock-v1.7.2) (2026-07-03)
 
 
