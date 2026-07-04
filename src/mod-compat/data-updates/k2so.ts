@@ -128,7 +128,7 @@ if(mods['Krastorio2'])
     techAddRecipe('kr-quarry-minerals-extraction', 'imersite-from-sediment');
     techRemoveRecipe('kr-quarry-minerals-extraction', 'kr-quarry-drill');
     techAddRecipe('kr-fluids-chemistry', 'rare-metal-from-sediment');
-    techAddRecipe('kr-fluids-chemistry', 'mineral-water-from-water');
+    techAddRecipe('kr-mineral-water-gathering', 'mineral-water-from-water');
 
     addMiningProductivity('rare-metal-from-sediment');
     addMiningProductivity('imersite-from-sediment');
