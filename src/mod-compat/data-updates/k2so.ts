@@ -1,7 +1,7 @@
 import { settingKeys } from 'src/setting-keys';
 import { addHiddenEntity } from 'src/utils/entity';
 import { addStartingItems } from 'src/utils/starting-items';
-import { addMiningProductivity, hideTechnology, techAddRecipe, techRemoveRecipe } from 'src/utils/technology';
+import { addMiningProductivity, addPrerequisite, hideTechnology, removePrerequisite, removeSciencePack, techAddRecipe, techRemoveRecipe } from 'src/utils/technology';
 
 // Even though k2so is strictly the optional dep, gating this on presence of Krastorio2 instead
 // Krastorio2 is a required dep of k2so, so this should always fire when k2so is installed
@@ -96,7 +96,34 @@ if(mods['Krastorio2'])
             auto_recycle: false,
             maximum_productivity: 9999,
         },
+        {
+            type: 'recipe',
+            name: 'biomass-from-wood',
+            categories: ['chemistry'],
+            energy_required: 120,
+            enabled: false,
+            allow_productivity: false,
+            ingredients: [
+                { type: 'fluid', name: 'petroleum-gas', amount: 100 },
+                { type: 'fluid', name: 'kr-oxygen', amount: 100 },
+                { type: 'item', name: 'wood', amount: 20 },
+            ],
+            results: [
+                { type: 'item', name: 'kr-biomass', amount: 5 },
+            ],
+            surface_conditions: [{
+                property: 'pressure',
+                min: 1000,
+                max: 1000,
+            }],
+            auto_recycle: false,
+        }
     ]);
+
+    removeSciencePack('kr-bio-processing', 'military-science-pack');
+    removePrerequisite('kr-bio-processing', 'military-science-pack');
+    addPrerequisite('military-science-pack', 'kr-bio-processing');
+    techAddRecipe('kr-bio-processing', 'biomass-from-wood');
 
     techAddRecipe('kr-quarry-minerals-extraction', 'imersite-from-sediment');
     techRemoveRecipe('kr-quarry-minerals-extraction', 'kr-quarry-drill');
