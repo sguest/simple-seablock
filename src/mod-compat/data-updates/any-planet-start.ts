@@ -29,8 +29,11 @@ if(mods['any-planet-start']) {
         fixNauvisRecipe('copper-from-sediment');
         fixNauvisRecipe('stone-from-sediment');
         fixNauvisRecipe('uranium-from-sediment');
-        fixNauvisRecipe('driftwood-forage');
         fixNauvisRecipe('tree-seed');
+
+        if(startingPlanet !== 'gleba') {
+            fixNauvisRecipe('driftwood-forage');
+        }
 
         techAddRecipe('planet-discovery-gleba', 'sediment');
         techAddRecipe('planet-discovery-gleba', 'stone-from-sediment');
@@ -133,6 +136,7 @@ if(mods['any-planet-start']) {
         addStartingItems('gleba', 'solar-panel', 20);
         addStartingItems('gleba', 'medium-electric-pole', 20);
         addStartingItems('gleba', 'stone-furnace', 20);
+        addStartingItems('gleba', 'chemical-plant', 10);
 
         data.raw.technology['electronics'].research_trigger = {
             type: 'craft-item',
