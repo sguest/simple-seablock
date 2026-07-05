@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.5](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.7.4...simple-seablock-v1.7.5) (2026-07-05)
+
+
+### Compatibility
+
+* early wood and stone access on gleba ([#55](https://github.com/sguest/simple-seablock/issues/55)) ([6bd34ff](https://github.com/sguest/simple-seablock/commit/6bd34ff0eca8790e78181a92128b66257c5cb152))
+
 ## [1.7.4](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.7.3...simple-seablock-v1.7.4) (2026-07-04)
 
 
