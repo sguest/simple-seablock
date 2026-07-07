@@ -78,6 +78,7 @@ if(mods['Krastorio2'])
             name: 'mineral-water-from-water',
             order: 'gg[mineral-water]',
             categories: ['chemistry'],
+            subgroup: 'fluid-recipes',
             energy_required: 1,
             enabled: false,
             allow_productivity: true,

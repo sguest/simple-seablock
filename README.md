@@ -21,11 +21,15 @@ Heavily inspired by the original [Sea Block](https://mods.factorio.com/mod/SeaBl
 
 ## Mod/options compatibility
 
-Due to having minimal techtree changes, this will automatically be compatible with many other mods that don't change map generation or add new planets. Some specific notes include:
+Due to having minimal techtree changes, this will automatically be compatible with many other mods that don't change map generation or add new planets or resources.
+
+Some mods that have specifically had compatibility added:
 
 - Compatible with [Any Planet Start](https://mods.factorio.com/mod/any-planet-start) starting on Vulcanus, Fulgora, or Gleba
   - Note the starting island on Nauvis and Vulcanus is *slightly* larger for technical reasons when Any Planet Start is installed
 - Compatible with [Krastorio 2 Spaced Out](https://mods.factorio.com/mod/Krastorio2-spaced-out)
+- Compatible with [Bob's Ores](https://mods.factorio.com/mod/bobores) which should enable most of the Bob's Mods stack
+- Compatible with [Space is Fake](https://mods.factorio.com/mod/space-is-fake) for a Nauvis-only playthrough
 
 Requests for compatibility with other mods can be made in the Discussion section on the mod portal or via GitHub issue, and will be considered where reasonable.
 
