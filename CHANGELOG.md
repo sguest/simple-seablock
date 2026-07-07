@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.7.5...simple-seablock-v1.8.0) (2026-07-07)
+
+
+### Features
+
+* bob's ores recipes ([#57](https://github.com/sguest/simple-seablock/issues/57)) ([070a053](https://github.com/sguest/simple-seablock/commit/070a053670fbfad6af39d0f9481581b86649227b))
+
 ## [1.7.5](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.7.4...simple-seablock-v1.7.5) (2026-07-05)
 
 
