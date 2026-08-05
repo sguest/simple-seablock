@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.1](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.8.0...simple-seablock-v1.8.1) (2026-08-05)
+
+
+### Compatibility
+
+* enable mod-added recipes on disabled technology ([#59](https://github.com/sguest/simple-seablock/issues/59)) ([a8ca023](https://github.com/sguest/simple-seablock/commit/a8ca023e856db50227d16756d96b9c12a1a9290a))
+
 ## [1.8.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.7.5...simple-seablock-v1.8.0) (2026-07-07)
 
 
