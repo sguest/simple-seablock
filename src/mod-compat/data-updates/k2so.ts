@@ -1,5 +1,6 @@
 import { settingKeys } from 'src/setting-keys';
 import { addHiddenEntity } from 'src/utils/entity';
+import { hideItem } from 'src/utils/item';
 import { addStartingItems } from 'src/utils/starting-items';
 import { addMiningProductivity, addPrerequisite, hideTechnology, removePrerequisite, removeSciencePack, techAddRecipe, techRemoveRecipe } from 'src/utils/technology';
 
@@ -14,10 +15,8 @@ if(mods['Krastorio2'])
 
     if(settings.startup[settingKeys.disableMiningDrills].value) {
         hideTechnology('kr-electric-mining-drill-mk2');
-        data.raw.item['kr-electric-mining-drill-mk2'].flags ||= [];
-        data.raw.item['kr-electric-mining-drill-mk2'].hidden = true;
-        data.raw.item['kr-quarry-drill'].flags ||= [];
-        data.raw.item['kr-quarry-drill'].hidden = true;
+        hideItem('kr-electric-mining-drill-mk2');
+        hideItem('kr-quarry-drill');
 
         addHiddenEntity(data.raw['mining-drill']['kr-electric-mining-drill-mk2']);
 

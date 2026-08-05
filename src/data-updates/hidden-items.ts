@@ -1,44 +1,26 @@
 import { addHiddenEntity } from 'src/utils/entity';
 import { settingKeys } from '../setting-keys';
-
-let hiddenItems: string[] = [];
+import { hideItem } from 'src/utils/item';
 
 if(settings.startup[settingKeys.disableMiningDrills].value) {
-    table.insert(hiddenItems, 'burner-mining-drill');
+    hideItem('burner-mining-drill');
     addHiddenEntity(data.raw['mining-drill']['burner-mining-drill']);
-    table.insert(hiddenItems, 'electric-mining-drill');
+    hideItem('electric-mining-drill');
     addHiddenEntity(data.raw['mining-drill']['electric-mining-drill']);
-    table.insert(hiddenItems, 'big-mining-drill');
+    hideItem('big-mining-drill');
     addHiddenEntity(data.raw['mining-drill']['big-mining-drill']);
 }
 
 if(settings.startup[settingKeys.disablePumpjacks].value) {
-    table.insert(hiddenItems, 'pumpjack');
+    hideItem('pumpjack');
     addHiddenEntity(data.raw['mining-drill']['pumpjack']);
 }
 
 if(settings.startup[settingKeys.disableOvergrowthSoil].value) {
-    table.insert(hiddenItems, 'overgrowth-jellynut-soil');
-    table.insert(hiddenItems, 'overgrowth-yumako-soil');
+    hideItem('overgrowth-jellynut-soil');
+    hideItem('overgrowth-yumako-soil');
 }
 
 if(settings.startup[settingKeys.disableCliffExplosives].value) {
-    table.insert(hiddenItems, 'cliff-explosives');
-}
-
-for(let itemName of hiddenItems) {
-    let item = data.raw.item[itemName];
-    if(item) {
-        item.flags ||= [];
-        item.hidden = true;
-    }
-    let fluid = data.raw.fluid[itemName];
-    if(fluid) {
-        fluid.hidden = true;
-    }
-    let recipe = data.raw.recipe[itemName];
-    if(recipe) {
-        recipe.enabled = false;
-        recipe.hidden = true;
-    }
+    hideItem('cliff-explosives');
 }
