@@ -27,6 +27,7 @@ Some mods that have specifically had compatibility added:
 
 - Compatible with [Any Planet Start](https://mods.factorio.com/mod/any-planet-start) starting on Vulcanus, Fulgora, or Gleba
   - Note the starting island on Nauvis and Vulcanus is *slightly* larger for technical reasons when Any Planet Start is installed
+  - Can also start on Aquilo, but only if [Dregeworks: Frozen Reaches](https://mods.factorio.com/mod/dw-frozen-reaches) is installed. This seems to be the [closest thing to an official way to start on Aquilo](https://mods.factorio.com/mod/any-planet-start/discussion/6727443dd6030f9c7379aadd). This probably doesn't work with Dredgeworks' hard/beans mode.
 - Compatible with [Krastorio 2 Spaced Out](https://mods.factorio.com/mod/Krastorio2-spaced-out)
 - Compatible with [Bob's Ores](https://mods.factorio.com/mod/bobores) which should enable most of the Bob's Mods stack
 - Compatible with [Space is Fake](https://mods.factorio.com/mod/space-is-fake) for a Nauvis-only playthrough
