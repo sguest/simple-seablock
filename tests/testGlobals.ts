@@ -1,1 +1,1 @@
-export const ignoredDependencies = ['cr-commons', 'Krastorio2Assets', 'Krastorio2MenuSimulations', 'k2so-assets'];
+export const ignoredDependencies = ['cr-commons', 'Krastorio2Assets', 'Krastorio2MenuSimulations', 'k2so-assets', 'dredgeworks-graphics'];
