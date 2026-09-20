@@ -20,3 +20,8 @@ jobs:
         run: npm ci
       - name: npm run build
         run: npm run build
+      - name: npm run test:ci
+        run: npm run test:ci
+        env:
+          FACTORIO_USERNAME: ${{ secrets.FACTORIO_USERNAME }}
+          FACTORIO_TOKEN: ${{ secrets.FACTORIO_TOKEN }}

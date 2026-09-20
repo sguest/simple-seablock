@@ -6,4 +6,5 @@ if(mods['space-is-fake']) {
 
     data.raw['autoplace-control']['ammoniacal-vent'].hidden = true;
     data.raw['autoplace-control']['lava-vent'].hidden = true;
+    data.raw['autoplace-control']['sif-enemy-base'].hidden = true;
 }
