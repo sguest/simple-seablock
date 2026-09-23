@@ -14,4 +14,5 @@ export async function setup() {
     await manager.installPortalMod('Krastorio2-spaced-out', { omitDependencies: ['Krastorio2Assets', 'Krastorio2MenuSimulations', 'k2so-assets'] });
     await manager.installPortalMod('bobores');
     await manager.installPortalMod('dw-frozen-reaches', { omitDependencies: ['dredgeworks-graphics'] });
+    await manager.installPortalMod('onlyGleba');
 }
