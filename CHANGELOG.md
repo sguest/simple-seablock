@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.2](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.8.1...simple-seablock-v1.8.2) (2026-09-23)
+
+
+### Bugfixes
+
+* use fuel_categories for factorio 2.1.20 ([#62](https://github.com/sguest/simple-seablock/issues/62)) ([d5f6ebd](https://github.com/sguest/simple-seablock/commit/d5f6ebd4e842c7f6c058c1f313e6dd8f3f31be5a))
+
 ## [1.8.1](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.8.0...simple-seablock-v1.8.1) (2026-08-05)
 
 
