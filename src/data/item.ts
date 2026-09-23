@@ -31,7 +31,7 @@ data.extend([{
     drop_sound: { filename: '__base__/sound/item/wood-inventory-move.ogg', volume: 0.7, aggregation: { max_count: 1, remove: true } },
     stack_size: 10,
     weight: 10000,
-    fuel_category: 'chemical',
+    fuel_categories: ['chemical'],
     fuel_value: '100kJ',
 }
 ]);
