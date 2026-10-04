@@ -1,0 +1,4 @@
+{
+    "extends": "../tsconfig.json",
+    "types": ["factorio-types", "@typescript-to-lua/language-extensions", "node"]
+}
