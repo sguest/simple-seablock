@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.8.2...simple-seablock-v1.9.0) (2026-10-06)
+
+
+### Features
+
+* Any Planet Start on Aquilo with Dregdeworks: Frozen Reaches ([#65](https://github.com/sguest/simple-seablock/issues/65)) ([d83720a](https://github.com/sguest/simple-seablock/commit/d83720a0fcd2fbc1e9ac79ac86bbd930812dfd8d))
+
 ## [1.8.2](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.8.1...simple-seablock-v1.8.2) (2026-09-23)
 
 
