@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest';
-import { FactorioEngine, tableToArray } from 'synthetic-factorio';
+import { FactorioEngine, defines } from 'synthetic-factorio';
 
 describe('Starting items chest', () => {
     it('should generate starting chest when chunk generated', () => {
@@ -54,7 +54,7 @@ describe('Starting items chest', () => {
         for(let planet of planets)
         {
             const createEntity = vi.fn();
-            engine.triggerEvent(20 /* defines.events.on_chunk_generated */, {
+            engine.triggerEvent(defines.events.on_chunk_generated, {
                 position: { x: 1, y: 0 },
                 surface: {
                     name: planet,
