@@ -23,13 +23,11 @@ Heavily inspired by the original [Sea Block](https://mods.factorio.com/mod/SeaBl
 
 Due to having minimal techtree changes, this will automatically be compatible with many other mods that don't change map generation or add new planets or resources.
 
-Some mods that have specifically had compatibility added:
+Mods with different resources than vanilla will not work without special compatibility added. Compat has been added for a number of different mods, anything that is an [optional dependency of this mod](https://mods.factorio.com/mod/SimpleSeablock/dependencies) has a compat layer and should work. A few compat items of specific note:
 
 - Compatible with [Any Planet Start](https://mods.factorio.com/mod/any-planet-start) starting on Vulcanus, Fulgora, or Gleba
   - Note the starting island on Nauvis and Vulcanus is *slightly* larger for technical reasons when Any Planet Start is installed
   - Can also start on Aquilo, but only if [Dregeworks: Frozen Reaches](https://mods.factorio.com/mod/dw-frozen-reaches) is installed. This seems to be the [closest thing to an official way to start on Aquilo](https://mods.factorio.com/mod/any-planet-start/discussion/6727443dd6030f9c7379aadd). This probably doesn't work with Dredgeworks' hard/beans mode. Will be very slow to start. You can probably ignore the warning message at startup about cargo ships not being installed.
-- Compatible with [Krastorio 2 Spaced Out](https://mods.factorio.com/mod/Krastorio2-spaced-out)
-- Compatible with [Bob's Ores](https://mods.factorio.com/mod/bobores) which should enable most of the Bob's Mods stack
 - Compatible with [Space is Fake](https://mods.factorio.com/mod/space-is-fake) for a Nauvis-only playthrough
 
 Requests for compatibility with other mods can be made in the Discussion section on the mod portal or via GitHub issue, and will be considered where reasonable.

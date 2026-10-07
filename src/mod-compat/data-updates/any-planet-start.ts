@@ -11,6 +11,47 @@ function makeStartingRecipe(recipe: string, originalTech: string) {
     techRemoveRecipe(originalTech, recipe);
 }
 
+export function addGlebaBacteriaForage() {
+    data.extend([
+        {
+            type: 'recipe',
+            name: 'iron-bacteria-forage',
+            categories: ['hand-crafting'],
+            enabled: true,
+            allow_productivity: false,
+            energy_required: 10,
+            ingredients: [],
+            results: [{ type: 'item', name: 'iron-bacteria', amount: 1 }],
+            allow_as_intermediate: false,
+            allow_decomposition: false,
+            surface_conditions: [{
+                property: 'pressure',
+                min: 2000,
+                max: 2000,
+            }],
+            auto_recycle: false,
+        },
+        {
+            type: 'recipe',
+            name: 'copper-bacteria-forage',
+            categories: ['hand-crafting'],
+            enabled: true,
+            allow_productivity: false,
+            energy_required: 10,
+            ingredients: [],
+            results: [{ type: 'item', name: 'copper-bacteria', amount: 1 }],
+            allow_as_intermediate: false,
+            allow_decomposition: false,
+            surface_conditions: [{
+                property: 'pressure',
+                min: 2000,
+                max: 2000,
+            }],
+            auto_recycle: false,
+        },
+    ]);
+}
+
 if(mods['any-planet-start']) {
     let startingPlanet = settings.startup['aps-planet'].value;
 
@@ -165,43 +206,6 @@ if(mods['any-planet-start']) {
         techRemoveRecipe('planet-discovery-nauvis', 'sediment');
         techRemoveRecipe('planet-discovery-nauvis', 'stone-from-sediment');
 
-        data.extend([
-            {
-                type: 'recipe',
-                name: 'iron-bacteria-forage',
-                categories: ['hand-crafting'],
-                enabled: true,
-                allow_productivity: false,
-                energy_required: 10,
-                ingredients: [],
-                results: [{ type: 'item', name: 'iron-bacteria', amount: 1 }],
-                allow_as_intermediate: false,
-                allow_decomposition: false,
-                surface_conditions: [{
-                    property: 'pressure',
-                    min: 2000,
-                    max: 2000,
-                }],
-                auto_recycle: false,
-            },
-            {
-                type: 'recipe',
-                name: 'copper-bacteria-forage',
-                categories: ['hand-crafting'],
-                enabled: true,
-                allow_productivity: false,
-                energy_required: 10,
-                ingredients: [],
-                results: [{ type: 'item', name: 'copper-bacteria', amount: 1 }],
-                allow_as_intermediate: false,
-                allow_decomposition: false,
-                surface_conditions: [{
-                    property: 'pressure',
-                    min: 2000,
-                    max: 2000,
-                }],
-                auto_recycle: false,
-            },
-        ]);
+        addGlebaBacteriaForage();
     }
 }

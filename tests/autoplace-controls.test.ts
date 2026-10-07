@@ -10,6 +10,7 @@ describe('Autoplace controls', () => {
         [['Krastorio2-spaced-out', 'Krastorio2', 'flib']],
         [['bobores', 'boblibrary']],
         [['dw-frozen-reaches', 'dredgeworks', 'stirling-generator']],
+        [['onlyGleba']],
     ])('should hide all autoplace controls for $0', (modList) => {
         const engine = new FactorioEngine({
             mods: ['base', 'space-age', 'elevated-rails', 'recycler', 'SimpleSeablock', ...modList],
