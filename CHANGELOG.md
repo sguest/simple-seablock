@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.9.0...simple-seablock-v1.10.0) (2026-10-07)
+
+
+### Features
+
+* Compatibility for Only Gleba ([#67](https://github.com/sguest/simple-seablock/issues/67)) ([5ee6728](https://github.com/sguest/simple-seablock/commit/5ee672820b9a09028c66e7c2bbad946a5e2cb8d7))
+
 ## [1.9.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.8.2...simple-seablock-v1.9.0) (2026-10-06)
 
 
