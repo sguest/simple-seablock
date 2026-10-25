@@ -8,6 +8,10 @@ function getRecipeName(key: string) {
     return `${name}-from-sediment`
 }
 
+function getGemRatio(gem: string) {
+    return settings.startup[`bobmods-gems-${gem}ratio`].value as number
+}
+
 if(mods['bobores']) {
     const settingMap = {
         "bobmods-ores-enablebauxite": "bauxite",
@@ -111,12 +115,12 @@ if(mods['bobores']) {
                     { type: 'item', name: 'sediment', amount: 2 },
                 ],
                 results: [
-                    { type: 'item', name: 'bob-ruby-ore', amount: 1, independent_probability: 0.1 * (settings.startup['bobmods-gems-rubyratio'].value as number) },
-                    { type: 'item', name: 'bob-sapphire-ore', amount: 1, independent_probability: 0.1 * (settings.startup['bobmods-gems-sapphireratio'].value as number) },
-                    { type: 'item', name: 'bob-emerald-ore', amount: 1, independent_probability: 0.1 * (settings.startup['bobmods-gems-emeraldratio'].value as number) },
-                    { type: 'item', name: 'bob-amethyst-ore', amount: 1, independent_probability: 0.1 * (settings.startup['bobmods-gems-amethystratio'].value as number) },
-                    { type: 'item', name: 'bob-topaz-ore', amount: 1, independent_probability: 0.1 * (settings.startup['bobmods-gems-topazratio'].value as number) },
-                    { type: 'item', name: 'bob-diamond-ore', amount: 1, independent_probability: 0.1 * (settings.startup['bobmods-gems-diamondratio'].value as number) },
+                    { type: 'item', name: 'bob-ruby-ore', amount: 1, independent_probability: 0.1 * getGemRatio('ruby') },
+                    { type: 'item', name: 'bob-sapphire-ore', amount: 1, independent_probability: 0.1 * getGemRatio('sapphire') },
+                    { type: 'item', name: 'bob-emerald-ore', amount: 1, independent_probability: 0.1 * getGemRatio('emerald') },
+                    { type: 'item', name: 'bob-amethyst-ore', amount: 1, independent_probability: 0.1 * getGemRatio('amethyst') },
+                    { type: 'item', name: 'bob-topaz-ore', amount: 1, independent_probability: 0.1 * getGemRatio('topaz') },
+                    { type: 'item', name: 'bob-diamond-ore', amount: 1, independent_probability: 0.1 * getGemRatio('diamond') },
                 ],
                 surface_conditions: [{
                     property: 'pressure',
@@ -173,16 +177,16 @@ if(mods['bobores']) {
 
         data.raw.recipe['wood-to-coal'].results = [
             { type: 'item', name: 'coal', amount: 10 },
-            { type: 'item', name: 'bob-diamond-ore', amount: 1, independent_probability: gemChance },
+            { type: 'item', name: 'bob-diamond-ore', amount: 1, independent_probability: gemChance * getGemRatio('diamond') },
         ]
 
         if(settings.startup['bobmods-ores-enablebauxite'].value)
         {
             data.raw.recipe[getRecipeName('bauxite')].results = [
                 { type: 'item', name: 'bob-bauxite-ore', amount: 1, },
-                { type: 'item', name: 'bob-ruby-ore', amount: 1, independent_probability: gemChance / 3 },
-                { type: 'item', name: 'bob-sapphire-ore', amount: 1, independent_probability: gemChance / 3 },
-                { type: 'item', name: 'bob-topaz-ore', amount: 1, independent_probability: gemChance / 3 },
+                { type: 'item', name: 'bob-ruby-ore', amount: 1, independent_probability: gemChance * getGemRatio('ruby') },
+                { type: 'item', name: 'bob-sapphire-ore', amount: 1, independent_probability: gemChance * getGemRatio('sapphire') },
+                { type: 'item', name: 'bob-topaz-ore', amount: 1, independent_probability: gemChance * getGemRatio('topaz') },
             ];
         }
 
@@ -190,8 +194,8 @@ if(mods['bobores']) {
         {
             data.raw.recipe[getRecipeName('quartz')].results = [
                 { type: 'item', name: 'bob-quartz', amount: 1, },
-                { type: 'item', name: 'bob-emerald-ore', amount: 1, independent_probability: gemChance / 2 },
-                { type: 'item', name: 'bob-amethyst-ore', amount: 1, independent_probability: gemChance / 2 },
+                { type: 'item', name: 'bob-emerald-ore', amount: 1, independent_probability: gemChance * getGemRatio('emerald') },
+                { type: 'item', name: 'bob-amethyst-ore', amount: 1, independent_probability: gemChance * getGemRatio('amethyst') },
             ];
         }
     }
