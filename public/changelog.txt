@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.10.1
+Date: 2026-10-25
+  Bugfixes:
+    - bobores - correctly honor gem ratio from other ores
+    - handle gems from other ores with furnace coal recipe
+
+---------------------------------------------------------------------------------------------------
 Version: 1.10.0
 Date: 2026-10-07
   Features:
