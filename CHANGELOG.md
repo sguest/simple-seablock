@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.10.1](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.10.0...simple-seablock-v1.10.1) (2026-10-25)
+
+
+### Bugfixes
+
+* bobores - correctly honor gem ratio from other ores ([#71](https://github.com/sguest/simple-seablock/issues/71)) ([3e6cce5](https://github.com/sguest/simple-seablock/commit/3e6cce595cffaf6c354d2cf73fafed05b35660da))
+* handle gems from other ores with furnace coal recipe ([#69](https://github.com/sguest/simple-seablock/issues/69)) ([41a71ef](https://github.com/sguest/simple-seablock/commit/41a71ef9dbc294f113208f1ce2b9a3bd505f9b15))
+
 ## [1.10.0](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.9.0...simple-seablock-v1.10.0) (2026-10-07)
 
 
