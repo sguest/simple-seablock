@@ -16,6 +16,7 @@ nauvis_rock.minable.results = [
     { type: 'item', name: 'pipe', amount_min: 20, amount_max: 20 },
     { type: 'item', name: 'wood', amount_min: 50, amount_max: 50 },
 ];
+table.insert(nauvis_rock.flags, 'not-deconstructable');
 
 const vulcanus_rock = table.deepcopy(data.raw['simple-entity']['big-volcanic-rock']);
 vulcanus_rock.name = 'vulcanus-seablock-chest';
@@ -29,6 +30,7 @@ vulcanus_rock.minable.results = [
     { type: 'item', name: 'ashland-tree-seed', amount_min: 20, amount_max: 20 },
     { type: 'item', name: 'foundry', amount_min: 10, amount_max: 10 },
 ];
+table.insert(vulcanus_rock.flags, 'not-deconstructable');
 
 const fulgora_ruin = table.deepcopy(data.raw['simple-entity']['fulgoran-ruin-small']);
 fulgora_ruin.name = 'fulgora-seablock-chest';
@@ -40,6 +42,7 @@ fulgora_ruin.minable.results = [
     { type: 'item', name: 'foundation', amount_min: 500, amount_max: 500 },
     { type: 'item', name: 'electromagnetic-plant', amount_min: 10, amount_max: 10 },
 ];
+table.insert(fulgora_ruin.flags, 'not-deconstructable');
 
 const gleba_tree = table.deepcopy(data.raw['tree']['slipstack']);
 gleba_tree.name = 'gleba-seablock-chest';
@@ -55,6 +58,7 @@ gleba_tree.minable.results = [
     { type: 'item', name: 'jellynut-seed', amount_min: 20, amount_max: 20 },
     { type: 'item', name: 'agricultural-tower', amount_min: 2, amount_max: 2 },
 ];
+table.insert(gleba_tree.flags, 'not-deconstructable');
 
 const aquilo_ice = table.deepcopy(data.raw['simple-entity']['lithium-iceberg-big']);
 aquilo_ice.name = 'aquilo-seablock-chest';
@@ -65,5 +69,6 @@ aquilo_ice.autoplace = null;
 aquilo_ice.minable.results = [
     { type: 'item', name: 'ice-platform', amount_min: 200, amount_max: 200 },
 ];
+table.insert(aquilo_ice.flags, 'not-deconstructable');
 
 data.extend([nauvis_rock, vulcanus_rock, fulgora_ruin, gleba_tree, aquilo_ice]);
