@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.2](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.10.1...simple-seablock-v1.10.2) (2026-11-14)
+
+
+### Bugfixes
+
+* prevent starting item chests from being deconstructed by robots (could lose items) ([#72](https://github.com/sguest/simple-seablock/issues/72)) ([36b1bbc](https://github.com/sguest/simple-seablock/commit/36b1bbcd4b036b2e668be33b88dd95864f7cd6b9))
+
 ## [1.10.1](https://github.com/sguest/simple-seablock/compare/simple-seablock-v1.10.0...simple-seablock-v1.10.1) (2026-10-25)
 
 
